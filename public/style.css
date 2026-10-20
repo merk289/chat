@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+#login-screen {
+  max-width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#login-screen h1 {
+  margin-top: 0;
+}
+#login-screen label {
+  display: block;
+  margin-bottom: 10px;
+}
+#login-screen input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+#login-error {
+  color: red;
+}
+.hidden {
+  display: none !important;
+}
+#chat-screen {
+  display: flex;
+  height: 100vh;
+}
+#chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.message {
+  margin-bottom: 6px;
+}
+.system-message {
+  color: gray;
+  font-style: italic;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+#input-row {
+  display: flex;
+  gap: 8px;
+}
+#message-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+}
+#send-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#sidebar {
+  width: 220px;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  padding: 10px;
+}
+#user-list {
+  padding-left: 20px;
+}
+#user-list li {
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+#user-list li:hover {
+  text-decoration: underline;
+}

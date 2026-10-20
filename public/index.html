@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Чат на веб-сокетах</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="login-screen">
+      <h1>Вход в чат</h1>
+      <label>
+        Ваше имя:
+        <input id="name-input" type="text" maxlength="20" />
+      </label>
+      <label>
+        Ваш цвет:
+        <input id="color-input" type="color" value="#3498db" />
+      </label>
+      <button id="join-btn">Войти</button>
+      <p id="login-error"></p>
+    </div>
+    <div id="chat-screen" class="hidden">
+      <div id="chat-main">
+        <div id="messages"></div>
+        <div id="input-row">
+          <input id="message-input" type="text" placeholder="Введите сообщение..." />
+          <button id="send-btn">Отправить</button>
+        </div>
+      </div>
+      <div id="sidebar">
+        <h3>В чате:</h3>
+        <ul id="user-list"></ul>
+      </div>
+    </div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
